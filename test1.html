@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Accesibilidad Web - Jared Foster</title>
+	<link rel="stylesheet" type="text/css" href="test1.css">
+</head>
+<body>
+	<header>
+		<h1>Proporcionar controles para el contenido que se inicia automáticamente</h1>
+	</header>
+	<div class="boton-container">
+		<a href="test.html" class="boton">Siguiente Ejercicio</a>
+	</div>
+	<div class="slider">
+		<div class="slider-container">
+			<div class="slide">
+				<video id="video1" class="video" controls>
+					<source src="video/video.mp4" type="video/mp4">
+					Tu navegador no soporta la etiqueta video.
+				</video>
+				<div class="description">Descripción del video 1</div>
+			</div>
+			<div class="slide">
+				<video id="video2" class="video" controls>
+					<source src="video/video1.mp4" type="video/mp4">
+					Tu navegador no soporta la etiqueta video.
+				</video>
+				<div class="description">Descripción del video 2</div>
+			</div>
+			<div class="slide">
+				<video id="video3" class="video" controls>
+					<source src="video/video2.mp4" type="video/mp4">
+					Tu navegador no soporta la etiqueta video.
+				</video>
+				<div class="description">Descripción del video 3</div>
+			</div>
+		</div>
+		<div class="controls">
+			<button id="prevBtn">&lt;</button>
+			<button id="playBtn">&#9658;</button>
+			<button id="pauseBtn">&#10074;&#10074;</button>
+			<button id="nextBtn">&gt;</button>
+			<button id="muteBtn">&#128266;</button>
+		</div>
+	</div>
+	<footer>
+		<p>&copy; 2023 Jared Foster Orduz - 55219501.</p>
+	</footer>
+
+	<script src="test1.js"></script>
+</body>
+</html>

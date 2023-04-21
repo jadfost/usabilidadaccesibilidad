@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+}
+
+header {
+	background-color: #404cf8db;
+	color: #fff;
+	padding: 10px;
+	text-align: center; /* añade esta línea para centrar el contenido */
+}
+
+header h1 {
+	font-size: 36px;
+	margin: 0;
+	text-align: center; /* añade esta línea para centrar el contenido */
+}
+
+nav ul {
+	list-style: none;
+	display: flex; /* añade esta línea para utilizar flexbox */
+	justify-content: center; /* añade esta línea para centrar los elementos */
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: 0 10px; /* añade un margen a los elementos para separarlos */
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+}
+
+h2 {
+	margin-top: 120px;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	margin-top: 30px;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+    margin: 0 auto; /* añade esta línea para centrar el video */
+	max-width: 1100px; /* establece un ancho máximo para el contenedor */
+}
+
+.video-container video {
+	margin-top: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.transcription {
+	margin-top: 20px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+	background-color: #404cf8db;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+}
+.boton {
+	margin-top: 30px;
+	display: inline-block;
+	background-color: #404cf8db;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 20px;
+  }
+  
+  /* Estilos para el contenedor del botón */
+  .boton-container {
+	float: left;
+	margin-left: 20px;
+  }

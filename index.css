@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f1f1f1;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+  
+header {
+	background-color: #2C69D5;
+	color: #fff;
+	padding: 10px;
+	text-align: center; /* añade esta línea para centrar el contenido */
+}
+
+header h1 {
+	font-size: 36px;
+	margin: 0;
+	text-align: center; /* añade esta línea para centrar el contenido */
+}
+
+nav ul {
+	list-style: none;
+	display: flex; /* añade esta línea para utilizar flexbox */
+	justify-content: center; /* añade esta línea para centrar los elementos */
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: 0 10px; /* añade un margen a los elementos para separarlos */
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+}
+
+h2 {
+	margin-top: 120px;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	margin-top: 30px;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+footer {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #2C69D5;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.boton {
+	margin-top: 30px;
+	display: inline-block;
+	background-color: #2C69D5;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 20px;
+  }
+  
+  /* Estilos para el contenedor del botón */
+  .boton-container {
+	float: left;
+	margin-left: 20px;
+  }
+
+  #play-pause-audio-button {
+	background-image: url('Imagenes/ad.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+  }
+  
+  #play-pause-audio-button.playing {
+	background-image: url('Imagenes/ad1.png');
+  }
+
+
+.pdf-icon {
+    background-size: contain;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+  
+	

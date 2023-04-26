@@ -4,50 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Accesibilidad Web - Jared Foster</title>
 	<link rel="stylesheet" type="text/css" href="test1.css">
-</head>
-<body>
-	<header>
-		<h1>Proporcionar controles para el contenido que se inicia automáticamente</h1>
-	</header>
-	<div class="boton-container">
-		<a href="index.html" class="boton">Siguiente Ejercicio</a>
-	</div>
-	<div class="slider">
-		<div class="slider-container">
-			<div class="slide">
-				<video id="video1" class="video" controls>
-					<source src="video/video.mp4" type="video/mp4">
-					Tu navegador no soporta la etiqueta video.
-				</video>
-				<div class="description">Descripción del video 1</div>
-			</div>
-			<div class="slide">
-				<video id="video2" class="video" controls>
-					<source src="video/video1.mp4" type="video/mp4">
-					Tu navegador no soporta la etiqueta video.
-				</video>
-				<div class="description">Descripción del video 2</div>
-			</div>
-			<div class="slide">
-				<video id="video3" class="video" controls>
-					<source src="video/video2.mp4" type="video/mp4">
-					Tu navegador no soporta la etiqueta video.
-				</video>
-				<div class="description">Descripción del video 3</div>
-			</div>
-		</div>
-		<div class="controls">
-			<button id="prevBtn">&lt;</button>
-			<button id="playBtn">&#9658;</button>
-			<button id="pauseBtn">&#10074;&#10074;</button>
-			<button id="nextBtn">&gt;</button>
-			<button id="muteBtn">&#128266;</button>
-		</div>
-	</div>
-	<footer>
-		<p>&copy; 2023 Jared Foster Orduz - 55219501.</p>
-	</footer>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
+</head>
+	<body>
+		<header>
+			<h1>EJEMPLO IMAGEN, ANIMACION Y VIDEO</h1>
+		</header>
+		<div class="container">
+			<br>
+			<h1>Animación GIF</h1>
+			<br>
+			<div class="gif-container">
+			  <img src="/Users/stevenorduz/Desktop/Diseño y Desarrollo/Imagenes/giphy.gif" alt="animación">
+			</div>
+			<div class="controls">
+				<button id="prev-btn"><i class="fas fa-backward"></i></button>
+				<button id="pause-btn"><i class="fas fa-play"></i></button>
+				<button id="play-btn"><i class="fas fa-pause"></i></button>
+				<button id="next-btn"><i class="fas fa-forward"></i></button>
+			</div>
+		</div>	
+	</body>
+	<footer>
+		<p>&copy; 2023 JARED FOSTER ORDUZ - 55219501</p>
+	</footer>
 	<script src="test1.js"></script>
-</body>
 </html>

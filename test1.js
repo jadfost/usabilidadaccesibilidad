@@ -1,72 +1,35 @@
-const videos = document.querySelectorAll('.video');
-const descriptions = document.querySelectorAll('.description');
-const prevBtn = document.getElementById('prevBtn');
-const playBtn = document.getElementById('playBtn');
-const pauseBtn = document.getElementById('pauseBtn');
-const nextBtn = document.getElementById('nextBtn');
-const muteBtn = document.getElementById('muteBtn');
+const gif = document.querySelector('.gif-container img');
+const pauseBtn = document.querySelector('#pause-btn');
+const playBtn = document.querySelector('#play-btn');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
 
-let currentVideo = 0;
-let isPlaying = false;
-let isMuted = false;
+prevBtn.addEventListener('click', function() {
+  window.location.href = 'test3.html';
+});
 
-function playVideo() {
-	videos[currentVideo].play();
-	playBtn.style.display = 'none';
-	pauseBtn.style.display = 'inline-block';
-	isPlaying = true;
+nextBtn.addEventListener('click', function() {
+  window.location.href = 'test2.html';
+});
+
+let isPaused = false;
+let intervalId;
+
+function pauseGif() {
+  if (!isPaused) {
+    clearInterval(intervalId);
+    isPaused = true;
+  }
 }
 
-function pauseVideo() {
-	videos[currentVideo].pause();
-	playBtn.style.display = 'inline-block';
-	pauseBtn.style.display = 'none';
-	isPlaying = false;
+function playGif() {
+  if (isPaused) {
+    intervalId = setInterval(() => {
+      gif.src = gif.src;
+    }, 0);
+    isPaused = false;
+  }
 }
 
-function muteVideo() {
-	if (isMuted) {
-		videos[currentVideo].muted = false;
-		muteBtn.innerHTML = '&#128266;';
-		isMuted = false;
-	} else {
-		videos[currentVideo].muted = true;
-		muteBtn.innerHTML = '&#128263;';
-		isMuted = true;
-	}
-}
-
-function showVideo(index) {
-	videos[currentVideo].pause();
-	playBtn.style.display = 'inline-block';
-	pauseBtn.style.display = 'none';
-	descriptions[currentVideo].style.display = 'none';
-	currentVideo = index;
-	videos[currentVideo].currentTime = 0;
-	videos[currentVideo].play();
-	descriptions[currentVideo].style.display = 'block';
-}
-
-prevBtn.addEventListener('click', () => {
-	let index = (currentVideo === 0) ? videos.length - 1 : currentVideo - 1;
-	showVideo(index);
-});
-
-nextBtn.addEventListener('click', () => {
-	let index = (currentVideo === videos.length - 1) ? 0 : currentVideo + 1;
-	showVideo(index);
-});
-
-playBtn.addEventListener('click', () => {
-	playVideo();
-});
-
-pauseBtn.addEventListener('click', () => {
-	pauseVideo();
-});
-
-muteBtn.addEventListener('click', () => {
-	muteVideo();
-});
-
-showVideo(currentVideo);
+pauseBtn.addEventListener('click', pauseGif);
+playBtn.addEventListener('click', playGif);
